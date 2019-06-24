@@ -3,7 +3,8 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from './components/pages/homePage';
 import SignUp from './components/pages/signUp';
-import 'semantic-ui-css/semantic.min.css'
+import Help from './components/pages/help';
+import 'semantic-ui-css/semantic.min.css';
 import { Grid } from 'semantic-ui-react';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
               <Grid.Column width={12}>
                 <Route exact path="/" component={Home} />
                 <Route path="/SignUp" component={SignUp} />
+                <Route path="/Help" component={Help} />
               </Grid.Column>
               <Grid.Column width={2}></Grid.Column>
             </Grid.Row>
