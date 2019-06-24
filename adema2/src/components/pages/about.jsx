@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import PageController from '../controller/pageController';
 
-class signUp extends Component {
+class about extends Component {
     state = {  }
     render() { 
         return ( 
             <div>
                 <PageController>
-                SignUp
+                About
                 </PageController>
                 
             </div>
@@ -15,4 +15,4 @@ class signUp extends Component {
     }
 }
  
-export default signUp;
+export default about;

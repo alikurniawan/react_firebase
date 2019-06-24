@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import PageController from '../controller/pageController';
 
-class signUp extends Component {
+class login extends Component {
     state = {  }
     render() { 
         return ( 
             <div>
                 <PageController>
-                SignUp
+                Login
                 </PageController>
                 
             </div>
@@ -15,4 +15,4 @@ class signUp extends Component {
     }
 }
  
-export default signUp;
+export default login;
