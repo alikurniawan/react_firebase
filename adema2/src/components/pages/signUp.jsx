@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 import PageController from '../controller/pageController';
 
-class homePage extends Component {
-    state = {}
-    render() {
-        return (
+class signUp extends Component {
+    state = {  }
+    render() { 
+        return ( 
             <div>
                 <PageController>
-                    Home
+                SignUP
                 </PageController>
-
+                
             </div>
-        );
+         );
     }
 }
-
-export default homePage;
+ 
+export default signUp;
