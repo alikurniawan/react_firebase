@@ -1,7 +1,14 @@
 import React, { Component } from "react";
-import { Menu, Image, Icon } from "semantic-ui-react";
+import { Menu, Image, Icon, Dropdown } from "semantic-ui-react";
 import Logo1 from "../images/lg1.jpg";
 import "../css/animate.css";
+import "../css/bgDegradation.css";
+
+const options = [
+  { key: 1, text: 'This is a super long item', value: 1 },
+  { key: 2, text: 'Dropdown direction can help', value: 2 },
+  { key: 3, text: 'Items are kept within view', value: 3 },
+]
 
 class navigationBar extends Component {
   constructor(props) {
@@ -25,19 +32,20 @@ class navigationBar extends Component {
 
   handleItemClickAbout = () => {
     document.location = "/About";
-  }
+  };
 
   // handleItemClickSignup = () => {
   //   document.location = "/SignUp";
   // };
 
   handleItemClickLogin = () => {
-    document.location = "/Login"
-  }
+    document.location = "/Login";
+  };
 
   handleItemClickHelp = () => {
     document.location = "/Help";
   };
+  
 
   render() {
     return (
@@ -53,10 +61,20 @@ class navigationBar extends Component {
           </Menu.Item>
 
           <Menu.Item name="home" onClick={this.handleItemClickHome}>
-            <Icon name='bomb' />Home
+            <Icon name="bomb" />
+            Home
           </Menu.Item>
+          <Dropdown
+            item
+            simple
+            text="Big Menu"
+            direction="right"
+            options={options}
+          />
+          
           <Menu.Item name="about" onClick={this.handleItemClickAbout}>
-            <Icon name='bar' />About
+            <Icon name="bar" />
+            About
           </Menu.Item>
 
           <Menu.Menu position="right">

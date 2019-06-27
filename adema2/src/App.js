@@ -14,14 +14,13 @@ import { Grid } from 'semantic-ui-react';
 
 function App() {
   return (
-    <div className='bgDegra'>
+    <div>
       <Router>
         <Switch>
           <Grid celled='internally'>
             <Grid.Row>
               <Grid.Column width={2}></Grid.Column>
               <Grid.Column width={12}>
-                
                 <Route exact path="/" component={Home} />
                 <Route path="/About" component={About} />
                 <Route path="/Login" component={Login} />
